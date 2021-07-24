@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<title>Journal article Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: black;
+  line-height: 1.8;
+}
+input[type=text] {
+  width: 800px;
+  box-sizing: border-box;
+  border: 2px solid #2c3247;
+  border-radius: 4px;
+  font-size: 20px;
+  background-color: white;
+  background-position: 5px 5px; 
+  background-repeat: no-repeat;
+  padding: 12px 40px 12px 40px;
+}
+input[type=text]:focus {
+  width: 100%;
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: lightblue;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+footer {
+  background-color:white;
+  padding: 30px;
+  text-align: left;
+  color: #2c3247;
+}
+</style>
+<body>
+<body align="center" bgcolor="lightgrey">
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+
+    </a>
+	<span class="w3-center w3-black w3-wide">
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+	<a href="article.html" class="w3-bar-item w3-button w3-hide-small">ARTICLE</a>
+    <a href="signup.html" class="w3-bar-item w3-button w3-hide-small">SIGNUP</a>
+    </a>
+  </div>
+
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+	<a href="#article" class="w3-bar-item w3-button" onclick="toggleFunction()">ARTICLE</a>
+    <a href="#sign up" class="w3-bar-item w3-button" onclick="toggleFunction()">SIGNUP</a>
+	
+  </div>
+</div>
+<br>
+<br>
+<br>
+<h1 style="text-align:center;">ALL ISSUE</h1>
+<hr>
+<br>
+<br>
+<h2>Volume 28</h2>
+
+<button class="accordion">Issue 1</button>
+<div class="panel">
+  <p><b>Public Information Directive (PSI) implementation in two Swedish municipalities</b><br>Proscovia Svärd</p><a href="article1.pdf">Download PDF</a>
+  <hr>
+  <p><b>Voices in the cloud: social media and trust in Canadian and US local governments</b><br>Lois Evans, Patricia Franks, Hsuanwei Michelle Chen</p><a href="article2.pdf">Download PDF</a>
+  <hr>
+  <p><b>Managing university records in the world of governance</b></p>Mathews J. Phiri, Alistair George Tough</p><a href="article3.pdf">Download PDF</a>
+  <hr>
+  <p><b>A review of digital curation professional competencies: theory and current practices</b><br>Yuanyuan Feng, Lorraine Richards</p><a href="article4.pdf">Download PDF</a>
+  <hr>
+  <p><b>The missing link in information and records management: personal knowledge registration</b><br>Ragna Kemp Haraldsdottir, Johanna Gunnlaugsdottir</p><a href="article5.pdf">Download PDF</a>
+  <hr>
+  <p><b>Recordkeeping in an outsourcing public agency</b><br>Ann-Sofie Klareld</p><a href="article6.pdf">Download PDF</a>
+  <hr>
+  <p><b>Post-records survey inspections in Zimbabwe: Reflections on compliance and non-compliance with records survey recommendations</b><br>Samson Mutsagondo</p><a href="article7.pdf">Download PDF</a>
+  <hr>
+</div>
+
+<button class="accordion">Issue 2</button>
+<div class="panel">
+  <p><b>Separating the wheat from the chaff with the winnowing fork: The eeny meeny miny mo appraisal approach of digital records in South Africa</b><br>Mpho Ngoepe, Marcia Nkwe</p><a href="article8.pdf">Download PDF</a>
+  <hr>
+  <p><b>The neglected fond in university archives: The case of sport club records at the University of KwaZulu-Natal (UKZN), Pietermaritzburg Campus, South Africa</b><br>Francis Garaba</p><a href="article9.pdf">Download PDF</a>
+  <hr>
+  <p><b>Electronic records management research in ESARBICA: a bibliometric study</b><br>Dickson Chigariro, Njabulo Bruce Khumalo</p><a href="article10.pdf">Download PDF</a>
+  <hr>
+  <p><b>Ethnographic sensitivity and current recordkeeping: Applying information culture analysis in the workplace</b><br>Gillian Oliver, Fiorella Foscarini, Craigie Sinclair, Catherine Nicholls, Lydia Loriente</p><a href="article11.pdf">Download PDF</a>
+  <hr>
+  <p><b>Medical records management framework to support public healthcare services in Limpopo province of South Africa</b><br>Ngoako Solomon Marutha, Mpho Ngoepe</b><br>Ragna Kemp Haraldsdottir, Johanna Gunnlaugsdottir</p><a href="article12.pdf">Download PDF</a>
+  <hr>
+  <p><b>Managing records and archives in a Hong Kong school: a case study</b><br>Eric C.K. Cheng</p><a href="article6.pdf">Download PDF</a>
+  <hr>
+</div>
+<br>
+<br>
+<p>ISSN:0956-5698<br>Copyright Holder:Emerald Publishing Limited</p>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+<br>
+<br>
+<br>
+<footer>
+<img src="image/logo.png" alt="image logo" width="20%" style="float:right"/>
+<p>© 2021 Emerald Publishing Limited</p>
+<a href="about.html" class="w3-bar-item w3-button w3-hide-small">ABOUT</a><br>
+<a href="feedback.html" class="w3-bar-item w3-button w3-hide-small">FEEDBACK</a>
+<p style="text-align:center;">Page last updated on 17 July 2021    |    This website are designed for IMS456 Individual Assignment</p>
+</footer>
+
+</body>
+</html>

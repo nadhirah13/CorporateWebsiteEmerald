@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<title>Journal article Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg-1 {
+  background-image: url('https://www.oxfordhealth.nhs.uk/wp-content/uploads/sites/13/2021/01/horizon.jpg');
+  min-height: 100%;
+}
+img {
+	display: block;
+	margin-left: auto;
+	margin-right:auto;
+}
+input[type=text] {
+  width: 800px;
+  box-sizing: border-box;
+  border: 2px solid #2c3247;
+  border-radius: 4px;
+  font-size: 20px;
+  background-color: white;
+  background-position: 5px 5px; 
+  background-repeat: no-repeat;
+  padding: 12px 40px 12px 40px;
+}
+input[type=text]:focus {
+  width: 100%;
+}
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+.form-container .cancel {
+  background-color: red;
+}
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+footer {
+  background-color:white;
+  padding: 30px;
+  text-align: left;
+  color: #2c3247;
+}
+</style>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+
+    </a>
+	<span class="w3-center w3-black w3-wide">
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="article.html" class="w3-bar-item w3-button w3-hide-small">ARTICLE</a>
+    <a href="signup.html" class="w3-bar-item w3-button w3-hide-small">SIGN UP</a>
+    </a>
+  </div>
+
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+	<a href="#article" class="w3-bar-item w3-button" onclick="toggleFunction()">ARTICLE</a>
+    <a href="#sign up" class="w3-bar-item w3-button" onclick="toggleFunction()">SIGN UP</a>
+	
+  </div>
+</div>
+
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+  <p style="font-size:50px;" style="text-align:center;">EMERALD ARTICLE</p>
+
+ <form>
+  <input type="text" name="search" placeholder="Search your title here">
+</form>
+  </div>
+</div>
+<button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+<footer>
+<img src="image/logo.png" alt="image logo" width="20%" style="float:right"/>
+<p>© 2021 Emerald Publishing Limited</p>
+<a href="about.html" class="w3-bar-item w3-button w3-hide-small">ABOUT</a><br>
+<a href="feedback.html" class="w3-bar-item w3-button w3-hide-small">FEEDBACK</a>
+<p style="text-align:center;">Page last updated on 17 July 2021    |    This website are designed for IMS456 Individual Assignment</p>
+</footer> 
+
+</body>
+</html>

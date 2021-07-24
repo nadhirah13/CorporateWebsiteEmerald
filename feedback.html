@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<title>Journal article Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: light grey;
+  color: light grey;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #2c3247;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #D0D0D0;
+  padding: 20px;
+}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: black;
+  line-height: 1.8;
+}
+input[type=text] {
+  width: 800px;
+  box-sizing: border-box;
+  border: 2px solid #2c3247;
+  border-radius: 4px;
+  font-size: 20px;
+  background-color: white;
+  background-position: 5px 5px; 
+  background-repeat: no-repeat;
+  padding: 12px 40px 12px 40px;
+}
+input[type=text]:focus {
+  width: 100%;
+}
+footer {
+  background-color:white;
+  padding: 30px;
+  text-align: left;
+  color: #2c3247;
+}
+</style>
+<body>
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+
+    </a>
+	<span class="w3-center w3-black w3-wide">
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="article.html" class="w3-bar-item w3-button w3-hide-small">ARTICLE</a>
+	<a href="signup.html" class="w3-bar-item w3-button w3-hide-small">SIGNUP</a>
+    </a>
+  </div>
+
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#article" class="w3-bar-item w3-button" onclick="toggleFunction()">ARTICLE</a>
+	<a href="#sign up" class="w3-bar-item w3-button" onclick="toggleFunction()">SIGNUP</a>
+
+  </div>
+</div>
+
+<div class="container">
+<br>
+<br>
+<br>
+<h1 style="text-align:center;">Feedback Form</h1>
+<br>
+<br>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+<br>
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+<br>
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="malaysia">Malaysia</option>
+	  <option value="korea">Korea</option>
+	  <option value="china">China</option>
+	  <option value="indonesia">Indonesia</option>
+	  <option value="united state">United State</option>
+	  
+    </select>
+
+    <label for="subject">Feedback</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<footer>
+<img src="image/logo.png" alt="image logo" width="20%" style="float:right"/>
+<p>© 2021 Emerald Publishing Limited</p>
+<a href="about.html" class="w3-bar-item w3-button w3-hide-small">ABOUT</a><br>
+<a href="feedback.html" class="w3-bar-item w3-button w3-hide-small">FEEDBACK</a>
+<p style="text-align:center;">Page last updated on 17 July 2021    |    This website are designed for IMS456 Individual Assignment</p>
+</footer>
+
+</body>
+</html>
